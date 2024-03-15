@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "ThisIsMyFontRe";
+  src: url("../public/font/Anuphan-Regular.ttf");
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,7 +21,12 @@
   }
 }
 
-body {
+* {
+  font-family: "ThisIsMyFontRe", sans-serif !important; 
+}
+
+body { 
+
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
